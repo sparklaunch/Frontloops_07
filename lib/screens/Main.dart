@@ -4,6 +4,7 @@ import "package:frontloops_07/components/ImagePanel.dart";
 import "package:frontloops_07/components/MainContainer.dart";
 import "package:frontloops_07/components/ContentContainer.dart";
 import "package:frontloops_07/components/BackArrow.dart";
+import "package:frontloops_07/components/RegionTabs.dart";
 
 class Main extends StatelessWidget {
   @override
@@ -21,7 +22,13 @@ class Main extends StatelessWidget {
                 flex: 3,
               ),
               Expanded(
-                child: ContentContainer(),
+                child: ContentContainer(
+                  child: Column(
+                    children: [
+                      RegionTabs(),
+                    ],
+                  ),
+                ),
                 flex: 7,
               ),
             ],
