@@ -1,11 +1,5 @@
 import "package:flutter/material.dart";
 
-const Map<String, bool> regions = {
-  "NETHERLANDS": false,
-  "SPAIN": true,
-  "FRANCE": false,
-};
-
 const TextStyle regionTextStyle = TextStyle(
   color: Color.fromRGBO(143, 143, 143, 1),
   fontSize: 16.0,
@@ -39,7 +33,7 @@ class RegionTabs extends StatelessWidget {
             TextSpan(
               text: "FRANCE",
               style: regionTextStyle,
-            )
+            ),
           ],
         ),
       ),

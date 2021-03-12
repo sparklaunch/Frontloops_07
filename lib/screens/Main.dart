@@ -5,6 +5,10 @@ import "package:frontloops_07/components/MainContainer.dart";
 import "package:frontloops_07/components/ContentContainer.dart";
 import "package:frontloops_07/components/BackArrow.dart";
 import "package:frontloops_07/components/RegionTabs.dart";
+import "package:frontloops_07/components/ContentTitle.dart";
+import "package:frontloops_07/components/ContentTextContainer.dart";
+import "package:frontloops_07/components/ContentAuthor.dart";
+import "package:frontloops_07/components/Gallery.dart";
 
 class Main extends StatelessWidget {
   @override
@@ -26,6 +30,26 @@ class Main extends StatelessWidget {
                   child: Column(
                     children: [
                       RegionTabs(),
+                      SizedBox(
+                        height: 100.0,
+                      ),
+                      ContentTextContainer(
+                        children: [
+                          ContentTitle(),
+                          SizedBox(
+                            height: 30.0,
+                          ),
+                          ContentAuthor(),
+                          SizedBox(
+                            height: 30.0,
+                          ),
+                          Row(
+                            children: [
+                              Gallery(),
+                            ],
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
