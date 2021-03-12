@@ -6,10 +6,14 @@ class ContentTextContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(
-        100.0,
+      padding: EdgeInsets.fromLTRB(
+        80.0,
+        80.0,
+        80.0,
+        30.0,
       ),
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: this.children,
       ),
     );

@@ -13,6 +13,7 @@ class BackArrow extends StatelessWidget {
             "BACK",
             style: TextStyle(
               fontWeight: FontWeight.bold,
+              color: Colors.black.withAlpha(128),
             ),
           ),
         ),
