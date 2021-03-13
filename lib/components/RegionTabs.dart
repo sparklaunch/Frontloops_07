@@ -1,10 +1,5 @@
 import "package:flutter/material.dart";
-
-const TextStyle regionTextStyle = TextStyle(
-  color: Color.fromRGBO(143, 143, 143, 1),
-  fontSize: 16.0,
-  fontWeight: FontWeight.bold,
-);
+import "package:frontloops_07/constants.dart";
 
 class RegionTabs extends StatelessWidget {
   @override
@@ -16,14 +11,14 @@ class RegionTabs extends StatelessWidget {
           children: [
             TextSpan(
               text: "NETHERLANDS",
-              style: regionTextStyle,
+              style: kRegionTextStyle,
             ),
             TextSpan(
               text: "        ",
             ),
             TextSpan(
               text: "SPAIN",
-              style: regionTextStyle.copyWith(
+              style: kRegionTextStyle.copyWith(
                 color: Colors.black,
               ),
             ),
@@ -32,7 +27,7 @@ class RegionTabs extends StatelessWidget {
             ),
             TextSpan(
               text: "FRANCE",
-              style: regionTextStyle,
+              style: kRegionTextStyle,
             ),
           ],
         ),

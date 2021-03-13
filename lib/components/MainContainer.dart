@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:frontloops_07/constants.dart';
 
 class MainContainer extends StatelessWidget {
   final Widget child;
@@ -6,18 +7,9 @@ class MainContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 1200.0,
+      width: kContainerWidth,
       child: this.child,
-      decoration: BoxDecoration(
-        boxShadow: [
-          BoxShadow(
-            spreadRadius: 3.0,
-            blurRadius: 10.0,
-            color: Colors.black12,
-            offset: Offset(0, 10),
-          ),
-        ],
-      ),
+      decoration: kContainerBoxDecoration,
     );
   }
 }

@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:frontloops_07/constants.dart";
 
 class ContentContainer extends StatelessWidget {
   final Widget child;
@@ -6,7 +7,7 @@ class ContentContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(30.0),
+      padding: kContentContainerPadding,
       color: Colors.white,
       child: this.child,
     );

@@ -11,11 +11,13 @@ import "package:frontloops_07/components/ContentAuthor.dart";
 import "package:frontloops_07/components/Gallery.dart";
 import "package:frontloops_07/components/GalleryDescription.dart";
 
+import "package:frontloops_07/constants.dart";
+
 class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(248, 232, 229, 1),
+      backgroundColor: kBackgroundColor,
       body: Center(
         child: MainContainer(
           child: IntrinsicHeight(
@@ -35,17 +37,17 @@ class Main extends StatelessWidget {
                       children: [
                         RegionTabs(),
                         SizedBox(
-                          height: 50.0,
+                          height: kGapBetweenRegionAndContent,
                         ),
                         ContentTextContainer(
                           children: [
                             ContentTitle(),
                             SizedBox(
-                              height: 30.0,
+                              height: kGapBetweenContents,
                             ),
                             ContentAuthor(),
                             SizedBox(
-                              height: 30.0,
+                              height: kGapBetweenContents,
                             ),
                             IntrinsicHeight(
                               child: Row(

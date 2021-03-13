@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:frontloops_07/constants.dart";
 
 class ContentTitle extends StatelessWidget {
   @override
@@ -10,11 +11,7 @@ class ContentTitle extends StatelessWidget {
             flex: 7,
             child: Text(
               "Visiting the pastelle city",
-              style: TextStyle(
-                fontSize: 80.0,
-                letterSpacing: -3.0,
-                fontWeight: FontWeight.bold,
-              ),
+              style: kTitleTextStyle,
             ),
           ),
           Expanded(

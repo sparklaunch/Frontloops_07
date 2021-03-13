@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:frontloops_07/constants.dart";
 
 class ContentTextContainer extends StatelessWidget {
   final List<Widget> children;
@@ -6,12 +7,7 @@ class ContentTextContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.fromLTRB(
-        80.0,
-        80.0,
-        80.0,
-        30.0,
-      ),
+      padding: kContentTextContainerPadding,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: this.children,

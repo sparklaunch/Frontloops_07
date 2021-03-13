@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:frontloops_07/constants.dart';
 
 class ImagePanel extends StatelessWidget {
   final Widget child;
@@ -6,7 +7,7 @@ class ImagePanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20.0),
+      padding: kImagePanelPadding,
       child: this.child,
       decoration: BoxDecoration(
         image: DecorationImage(

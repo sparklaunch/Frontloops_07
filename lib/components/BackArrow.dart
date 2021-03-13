@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:frontloops_07/constants.dart';
 
 class BackArrow extends StatelessWidget {
   @override
@@ -11,10 +12,7 @@ class BackArrow extends StatelessWidget {
           offset: Offset(-20, 0),
           child: Text(
             "BACK",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Colors.black.withAlpha(128),
-            ),
+            style: kBackArrowTextStyle,
           ),
         ),
       ),
